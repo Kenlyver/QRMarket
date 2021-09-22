@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/historyFragment"
+          android:title="  Lịch sử"
+          android:icon="@drawable/ic_history"/>
+    <item android:id="@+id/scanFragment"
+          android:title=""
+          />
+    <item android:id="@+id/settingFragment2"
+          android:title="Cài đặt"
+          android:icon="@drawable/ic_settings"/>
+</menu>

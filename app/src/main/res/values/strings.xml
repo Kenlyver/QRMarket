@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">QRMarket</string>
+    <string name="qr_code_market">QR Code Market</string>
+    <string name="enter_your_login_name">Tên đăng nhập</string>
+    <string name="let_s_join_hands_to_prevent_covid">Let\'s join hands to prevent Covid</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="enter_your_password">Mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="quick_login">Đăng nhập nhanh với tài khoản</string>
+    <string name="you_dont_have_account">"Bạn chưa có tài khoản?"</string>
+    <string name="sign_up">
+        <u>Đăng ký</u>
+    </string>
+    <string name="google_account">Google Account</string>
+    <string name="facebook_account">Facebook Account</string>
+    <string name="enter_your_full_name">Họ và tên</string>
+    <string name="enter_your_date_of_birth">Ngày sinh</string>
+    <string name="enter_your_number_phone">Số điện thoại</string>
+    <string name="you_have_account">Bạn đã đăng ký?</string>
+    <string name="sign_in">
+        <u>Đăng nhập</u>
+    </string>
+    <string name="register">Đăng Ký</string>
+    <string name="continue_button">Tiếp tục</string>
+    <string name="facebook_app_id">444724829996754</string>
+    <string name="fb_login_protocol_scheme">fb444724829996754</string>
+    <string name="enter_your_address">Địa chỉ</string>
+    <string name="enter_your_address2">
+        <font size="16">Địa chỉ</font>
+    </string>
+    <string name="complete">Xác nhận</string>
+
+    <string-array name="Province">
+        <item>Tỉnh</item>
+    </string-array>
+    <string-array name="District">
+        <item>Huyện</item>
+    </string-array>
+    <string-array name="Ward">
+        <item>Xã</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shield5k">shield5k</string>
+    <string name="checkgif">checkgif</string>
+    <string name="account_setting">Cài đặt tài khoản</string>
+    <string name="display">Hiển thị</string>
+    <string name="make_sound">Âm thanh</string>
+    <string name="vibrate">Rung</string>
+    <string name="setting">Cài đặt</string>
+    <string name="privacy">Chính sách quyền riêng tư</string>
+    <string name="help_and_feedback">Phản hồi và giúp đỡ</string>
+    <string name="introduction">Giới thiệu</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="date_of_birth">Ngày sinh</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="address">Địa chỉ</string>
+    <string name="enter_your_old_password">Nhập mật khẩu cũ</string>
+    <string name="enter_your_new_password">Nhập mật khẩu mới</string>
+    <string name="qr_market_dashboard">QR Market Dashboard</string>
+    <string name="name">A</string>
+    <string name="market_manager">Quản lý chợ</string>
+    <string name="image_dashboard">image_dashboard</string>
+    <string name="statistical">Thống kê</string>
+    <string name="notification">Thông báo</string>
+    <string name="enter_name_market">Nhập tên chợ</string>
+    <string name="enter_market_location">Nhập địa chỉ chợ</string>
+    <string name="enter_url_image_qrcode_out">Nhập url mã vào chợ</string>
+    <string name="enter_url_image_qrcode_in">Nhập url mã ra chợ</string>
+    <string name="update_market">Cập nhật thông tin chợ</string>
+    <string name="image_qr_code_in">Mã QR vào chợ</string>
+    <string name="image_qr_code_out">Mã QR ra chợ</string>
+    <string name="market_name">Tên chợ</string>
+    <string name="market_location">Địa chỉ chợ</string>
+    <string name="citizen_s_info">Thông tin người dân</string>
+    <string name="time_in">Giờ vào:</string>
+    <string name="time_out">Giờ ra:</string>
+    <string name="date">Ngày:</string>
+    <string name="location">Địa chỉ:</string>
+    <string name="save_change">Lưu thay đổi</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="number_phone">Số điện thoại</string>
+    <string name="profile">Tài khoản</string>
+    <string name="floatbutton">FloatButton</string>
+    <string name="save_market">Lưu</string>
+    <string name="add_market">Add Market</string>
+    <string name="back">Back</string>
+    <string name="full_name_info">Full Name:</string>
+    <string name="date_of_birth_info">Date of birth:</string>
+    <string name="number_phone_info">Number Phone:</string>
+    <string name="address_info">Address:</string>
+    <string name="ward_info">Ward:</string>
+    <string name="district_info">District:</string>
+    <string name="province_info">Province:</string>
+</resources>
