@@ -1,6 +1,4 @@
-package com.example.qrcodemarket.data.model_new
-
-import com.google.gson.annotations.SerializedName
+package com.example.qrcodemarket.data.model
 
 data class dataMarketManage(val markets: ArrayList<MarketData>)
 data class MarketData(

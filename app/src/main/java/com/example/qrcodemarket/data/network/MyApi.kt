@@ -1,6 +1,6 @@
 package com.example.qrcodemarket.data.network
 
-import com.example.qrcodemarket.data.model.InsertUser
+
 import com.example.qrcodemarket.data.network.response.AuthResponse
 import com.example.qrcodemarket.data.network.response.NetworkConnectionInterceptor
 import retrofit2.Call

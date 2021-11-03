@@ -1,10 +1,9 @@
 package com.example.qrcodemarket.ui.admin.statistical
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.qrcodemarket.data.model_new.StatisticalData
+import com.example.qrcodemarket.data.model.StatisticalData
 import com.example.qrcodemarket.databinding.RecyclerStatisticalBinding
 
 class StatisticalAdapter() : RecyclerView.Adapter<StatisticalAdapter.MyViewHolder>() {

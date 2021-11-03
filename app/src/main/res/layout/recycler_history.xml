@@ -5,7 +5,7 @@
 
     <data>
         <variable name="recyclerHistory"
-                  type="com.example.qrcodemarket.data.model_new.HistoryData"/>
+                  type="com.example.qrcodemarket.data.model.HistoryData"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

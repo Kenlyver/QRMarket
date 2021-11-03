@@ -2,7 +2,7 @@ package com.example.qrcodemarket.ui.auth
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.qrcodemarket.data.respositories.UserRepository
+import com.example.qrcodemarket.data.repositories.UserRepository
 
 @Suppress("UNCHECKED_CAST")
 class AuthViewModelFactory (

@@ -12,7 +12,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.qrcodemarket.R
-import com.example.qrcodemarket.data.model.UpdateMarket
 import com.example.qrcodemarket.data.network.QRApi
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

@@ -3,9 +3,8 @@ package com.example.qrcodemarket.ui.admin.market
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.qrcodemarket.data.model_new.MarketData
-import com.example.qrcodemarket.data.model_new.dataMarketManage
-import com.example.qrcodemarket.data.model_new.dataStatistical
+import com.example.qrcodemarket.data.model.MarketData
+import com.example.qrcodemarket.data.model.dataMarketManage
 import com.example.qrcodemarket.data.network.response.RetroInstance
 import com.example.qrcodemarket.data.network.response.RetroService
 import retrofit2.Call

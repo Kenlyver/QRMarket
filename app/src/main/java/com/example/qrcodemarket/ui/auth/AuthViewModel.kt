@@ -1,12 +1,8 @@
 package com.example.qrcodemarket.ui.auth
 
-import android.content.Intent
-import android.util.Log
 import android.view.View
-import android.widget.Toast
-import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.lifecycle.ViewModel
-import com.example.qrcodemarket.data.respositories.UserRepository
+import com.example.qrcodemarket.data.repositories.UserRepository
 import com.example.qrcodemarket.util.ApiExceptions
 import com.example.qrcodemarket.util.Coroutines
 import com.example.qrcodemarket.util.NoInternetException

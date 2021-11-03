@@ -14,7 +14,7 @@ import com.example.qrcodemarket.R
 import com.example.qrcodemarket.data.model.DetailUser
 import com.example.qrcodemarket.data.network.MyApi
 import com.example.qrcodemarket.data.network.response.NetworkConnectionInterceptor
-import com.example.qrcodemarket.data.respositories.UserRepository
+import com.example.qrcodemarket.data.repositories.UserRepository
 import com.example.qrcodemarket.databinding.FragmentRegisterBinding
 import com.example.qrcodemarket.ui.auth.AuthViewModel
 import com.example.qrcodemarket.ui.auth.AuthViewModelFactory

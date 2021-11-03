@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager.VERTICAL
 import com.example.qrcodemarket.BR
 import com.example.qrcodemarket.R
-import com.example.qrcodemarket.data.model_new.dataHistory
+import com.example.qrcodemarket.data.model.dataHistory
 import com.example.qrcodemarket.data.network.QRApi
 import com.example.qrcodemarket.databinding.FragmentHistoryBinding
 import com.example.qrcodemarket.ui.auth.AppPreferences

@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
 import com.example.qrcodemarket.R
 import com.example.qrcodemarket.BR
-import com.example.qrcodemarket.data.model_new.dataStatistical
+import com.example.qrcodemarket.data.model.dataStatistical
 import com.example.qrcodemarket.databinding.FragmentStatisticalBinding
 import kotlinx.android.synthetic.main.fragment_statistical.view.*
 

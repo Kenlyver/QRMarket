@@ -1,4 +1,4 @@
-package com.example.qrcodemarket.data.model_new
+package com.example.qrcodemarket.data.model
 
 
 data class Market(

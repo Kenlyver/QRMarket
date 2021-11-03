@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
-import com.example.qrcodemarket.data.model_new.HistoryData
+import com.example.qrcodemarket.data.model.HistoryData
 import com.example.qrcodemarket.databinding.RecyclerHistoryBinding
 
 class HistoryAdapter: RecyclerView.Adapter<HistoryAdapter.MyViewHolder>(),Filterable {

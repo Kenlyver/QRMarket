@@ -1,8 +1,8 @@
 package com.example.qrcodemarket.data.network.response
 
-import com.example.qrcodemarket.data.model_new.dataHistory
-import com.example.qrcodemarket.data.model_new.dataMarketManage
-import com.example.qrcodemarket.data.model_new.dataStatistical
+import com.example.qrcodemarket.data.model.dataHistory
+import com.example.qrcodemarket.data.model.dataMarketManage
+import com.example.qrcodemarket.data.model.dataStatistical
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers

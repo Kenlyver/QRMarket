@@ -1,9 +1,8 @@
-package com.example.qrcodemarket.data.respositories
+package com.example.qrcodemarket.data.repositories
 
 import com.example.qrcodemarket.data.network.MyApi
 import com.example.qrcodemarket.data.network.response.AuthResponse
 import com.example.qrcodemarket.data.network.response.SafeApiRequest
-import retrofit2.Response
 
 class UserRepository(
     private val api:MyApi

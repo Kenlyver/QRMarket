@@ -4,7 +4,8 @@ package com.example.qrcodemarket.ui.admin.statistical
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.qrcodemarket.data.model_new.*
+import com.example.qrcodemarket.data.model.StatisticalData
+import com.example.qrcodemarket.data.model.dataStatistical
 import com.example.qrcodemarket.data.network.response.RetroInstance
 import com.example.qrcodemarket.data.network.response.RetroService
 import retrofit2.Call

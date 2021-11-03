@@ -1,4 +1,4 @@
-package com.example.qrcodemarket.data.model_new
+package com.example.qrcodemarket.data.model
 
 data class dataStatistical(val access: ArrayList<StatisticalData>)
 data class StatisticalData(

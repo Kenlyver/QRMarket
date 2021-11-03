@@ -12,7 +12,6 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.qrcodemarket.R
-import com.example.qrcodemarket.data.model.InsertAccessMarket
 import com.example.qrcodemarket.data.network.QRApi
 import com.example.qrcodemarket.ui.auth.AppPreferences
 import com.google.zxing.Result

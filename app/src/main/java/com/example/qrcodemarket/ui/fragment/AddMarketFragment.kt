@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.qrcodemarket.R
-import com.example.qrcodemarket.data.model.InsertMarket
 import com.example.qrcodemarket.data.network.QRApi
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

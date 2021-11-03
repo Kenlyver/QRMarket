@@ -3,7 +3,7 @@ package com.example.qrcodemarket.ui.admin.market
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.qrcodemarket.data.model_new.MarketData
+import com.example.qrcodemarket.data.model.MarketData
 import com.example.qrcodemarket.databinding.RecycleMarketItemBinding
 
 

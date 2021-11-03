@@ -16,18 +16,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.qrcodemarket.BR
 import com.example.qrcodemarket.R
-import com.example.qrcodemarket.data.model.DetailMarket
-import com.example.qrcodemarket.data.model.MarketAdapter
-import com.example.qrcodemarket.data.model.getMarket
-import com.example.qrcodemarket.data.model_new.dataMarketManage
-import com.example.qrcodemarket.data.model_new.dataStatistical
+import com.example.qrcodemarket.data.model.dataMarketManage
 import com.example.qrcodemarket.data.network.QRApi
 import com.example.qrcodemarket.databinding.FragmentMarketManagerBinding
-import com.example.qrcodemarket.databinding.FragmentStatisticalBinding
-import com.example.qrcodemarket.ui.admin.statistical.StatisticalViewModel
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_market_manager.view.*
 
 class MarketManagerFragment : Fragment() {

@@ -4,7 +4,7 @@
 
     <data>
         <variable name="recyclerStatistical"
-                  type="com.example.qrcodemarket.data.model_new.StatisticalData"/>
+                  type="com.example.qrcodemarket.data.model.StatisticalData"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

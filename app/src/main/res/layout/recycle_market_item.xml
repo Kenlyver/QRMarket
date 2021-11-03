@@ -4,7 +4,7 @@
 
     <data>
         <variable name="marketbinding"
-                  type="com.example.qrcodemarket.data.model_new.MarketData"/>
+                  type="com.example.qrcodemarket.data.model.MarketData"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.qrcodemarket.R
-import com.example.qrcodemarket.data.model.UpdateUser
 import com.example.qrcodemarket.data.network.QRApi
 import com.example.qrcodemarket.ui.auth.AppPreferences
 import io.reactivex.android.schedulers.AndroidSchedulers

@@ -12,7 +12,7 @@ import com.example.qrcodemarket.R
 import com.example.qrcodemarket.data.network.MyApi
 import com.example.qrcodemarket.data.network.response.NetworkConnectionInterceptor
 import com.example.qrcodemarket.data.network.response.User
-import com.example.qrcodemarket.data.respositories.UserRepository
+import com.example.qrcodemarket.data.repositories.UserRepository
 import com.example.qrcodemarket.databinding.FragmentLoginBinding
 import com.example.qrcodemarket.ui.auth.*
 import com.example.qrcodemarket.util.hide

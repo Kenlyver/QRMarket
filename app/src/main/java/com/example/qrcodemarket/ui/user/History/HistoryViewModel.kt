@@ -2,8 +2,8 @@ package com.example.qrcodemarket.ui.user.History
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.qrcodemarket.data.model_new.HistoryData
-import com.example.qrcodemarket.data.model_new.dataHistory
+import com.example.qrcodemarket.data.model.HistoryData
+import com.example.qrcodemarket.data.model.dataHistory
 import com.example.qrcodemarket.data.network.response.RetroInstance
 import com.example.qrcodemarket.data.network.response.RetroService
 import retrofit2.Call
