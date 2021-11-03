@@ -31,11 +31,11 @@ class ChangePasswordFragment : Fragment() {
         }
     }
 
-    var disposable: Disposable? = null
-    var loginName: String? = null
-    var currentPassword: String? = null
-    var newPassword: String? = null
-    var confirmPassword: String? = null
+    lateinit var disposable: Disposable
+    lateinit var loginName: String
+    lateinit var currentPassword: String
+    lateinit var newPassword: String
+    lateinit var confirmPassword: String
     val insertApi by lazy {
         QRApi.create()
     }
@@ -81,8 +81,8 @@ class ChangePasswordFragment : Fragment() {
         } else {
             loginName = AppPreferences.username
             val dataPassword: UpdatePassword.Data
-            dataPassword = UpdatePassword.Data(currentPassword!!,newPassword!!)
-            disposable = insertApi.updatePassword(loginName!!, dataPassword)
+            dataPassword = UpdatePassword.Data(currentPassword,newPassword)
+            disposable = insertApi.updatePassword(loginName, dataPassword)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(

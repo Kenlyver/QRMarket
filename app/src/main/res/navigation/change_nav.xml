@@ -23,13 +23,13 @@
         <action android:id="@+id/action_accountSettingFragment_to_dashboardFragment"
                 app:destination="@id/dashboardFragment"/>
     </fragment>
-    <fragment android:id="@+id/settingFragment2" android:name="com.example.qrcodemarket.ui.fragment.SettingFragment"
+    <fragment android:id="@+id/settingFragment2" android:name="com.example.qrcodemarket.ui.user.Setting.SettingFragment"
               android:label="fragment_setting" tools:layout="@layout/fragment_setting">
         <action android:id="@+id/action_settingFragment2_to_accountSettingFragment"
                 app:destination="@id/accountSettingFragment"/>
         <action android:id="@+id/action_settingFragment2_to_loginFragment" app:destination="@id/loginFragment"/>
     </fragment>
-    <fragment android:id="@+id/historyFragment" android:name="com.example.qrcodemarket.ui.fragment.HistoryFragment"
+    <fragment android:id="@+id/historyFragment" android:name="com.example.qrcodemarket.ui.user.History.HistoryFragment"
               android:label="fragment_history" tools:layout="@layout/fragment_history">
         <action android:id="@+id/action_historyFragment_to_scanFragment" app:destination="@id/scanFragment"/>
     </fragment>
@@ -43,7 +43,7 @@
         <action android:id="@+id/action_changePasswordFragment_to_accountSettingFragment"
                 app:destination="@id/accountSettingFragment"/>
     </fragment>
-    <fragment android:id="@+id/dashboardFragment" android:name="com.example.qrcodemarket.ui.fragment.DashboardFragment"
+    <fragment android:id="@+id/dashboardFragment" android:name="com.example.qrcodemarket.ui.admin.DashboardFragment"
               android:label="fragment_dashboard" tools:layout="@layout/fragment_dashboard">
         <action android:id="@+id/action_dashboardFragment_to_loginFragment" app:destination="@id/loginFragment"/>
         <action android:id="@+id/action_dashboardFragment_to_marketManagerFragment"
@@ -54,7 +54,7 @@
                 app:destination="@id/accountSettingFragment"/>
     </fragment>
     <fragment android:id="@+id/marketManagerFragment"
-              android:name="com.example.qrcodemarket.ui.fragment.MarketManagerFragment"
+              android:name="com.example.qrcodemarket.ui.admin.market.MarketManagerFragment"
               android:label="fragment_market_manager" tools:layout="@layout/fragment_market_manager">
         <action android:id="@+id/action_marketManagerFragment_to_updateMarketFragment"
                 app:destination="@id/updateMarketFragment"/>
@@ -78,7 +78,7 @@
                 app:destination="@id/marketManagerFragment"/>
     </fragment>
     <fragment android:id="@+id/statisticalFragment"
-              android:name="com.example.qrcodemarket.ui.fragment.StatisticalFragment"
+              android:name="com.example.qrcodemarket.ui.admin.statistical.StatisticalFragment"
               android:label="fragment_statistical" tools:layout="@layout/fragment_statistical">
         <action android:id="@+id/action_statisticalFragment_to_dashboardFragment"
                 app:destination="@id/dashboardFragment"/>
@@ -86,7 +86,7 @@
                 app:destination="@id/showInfoUserFragment"/>
     </fragment>
     <fragment android:id="@+id/showInfoUserFragment"
-              android:name="com.example.qrcodemarket.ui.fragment.ShowInfoUserFragment"
+              android:name="com.example.qrcodemarket.ui.user.Info.ShowInfoUserFragment"
               android:label="fragment_show_info_user" tools:layout="@layout/fragment_show_info_user">
         <action android:id="@+id/action_showInfoUserFragment_to_statisticalFragment"
                 app:destination="@id/statisticalFragment"/>

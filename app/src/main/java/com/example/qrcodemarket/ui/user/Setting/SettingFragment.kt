@@ -1,4 +1,4 @@
-package com.example.qrcodemarket.ui.fragment
+package com.example.qrcodemarket.ui.user.Setting
 
 import android.os.Bundle
 import android.view.LayoutInflater

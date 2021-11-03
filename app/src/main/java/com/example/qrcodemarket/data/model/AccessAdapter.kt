@@ -31,8 +31,4 @@ class AccessAdapter(var access:List<getDataAccess.Data>):RecyclerView.Adapter<Ac
 
     override fun getItemCount() = access.size
 
-    fun updateData(modelList:List<getDataAccess.Data>){
-        access = modelList
-        notifyDataSetChanged()
-    }
 }

@@ -19,23 +19,6 @@ interface MyApi {
         @Field("password") password:String
     ): Response<AuthResponse>
 
-//    @FormUrlEncoded
-//    @POST("createuser")
-//    suspend fun userSignUp(
-//        @Field("loginName") loginName:String,
-//        @Field("password") password:String,
-//        @Field("fullName") fullName:String,
-//        @Field("dateOfBirth") dateOfBirth:String,
-//        @Field("numberPhone") numberPhone:String
-//    ):Response<AuthResponse>
-
-    @PUT("updateaddress/{id}")
-    fun updateAddress(
-        @Path("id") userId:Int,
-        @Body updateAddress: InsertUser
-    ): Call<InsertUser>
-
-
     companion object{
         operator  fun invoke(
             networkConnectionInterceptor: NetworkConnectionInterceptor
@@ -47,7 +30,7 @@ interface MyApi {
 
             return Retrofit.Builder()
                 .client(okkHttpclient)
-                .baseUrl("http://192.168.1.6:80/myapi/public/")
+                .baseUrl("http://192.168.1.2:80/myapi/public/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(MyApi::class.java)

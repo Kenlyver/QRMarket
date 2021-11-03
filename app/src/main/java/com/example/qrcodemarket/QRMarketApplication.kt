@@ -4,6 +4,7 @@ import android.app.Application
 import com.example.qrcodemarket.data.network.MyApi
 import com.example.qrcodemarket.data.network.response.NetworkConnectionInterceptor
 import com.example.qrcodemarket.data.respositories.UserRepository
+import com.example.qrcodemarket.ui.admin.statistical.StatisticalViewModel
 import com.example.qrcodemarket.ui.auth.AuthViewModelFactory
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware

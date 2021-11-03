@@ -1,211 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ui.fragment.ShowInfoUserFragment">
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel"
+                  type="com.example.qrcodemarket.ui.user.Info.ShowInfoViewModel"/>
+    </data>
 
-    <androidx.appcompat.widget.Toolbar
-            android:layout_height="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:background="@color/blue"
-            android:id="@+id/toolbar_acc"
-            tools:ignore="MissingConstraints">
-        <RelativeLayout
+            android:layout_height="match_parent"
+            tools:context=".ui.user.Info.ShowInfoUserFragment">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:id="@+id/toolbar_acc"
+                tools:ignore="MissingConstraints">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <ImageView
+                        android:id="@+id/imgBackk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/ic_baseline_arrow_back_24" tools:ignore="ContentDescription"/>
+                <TextView
+                        android:id="@+id/txtLayoutName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/citizen_s_info"
+                        android:textSize="22sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp">
-
-            <ImageView
-                    android:id="@+id/imgBackk"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" tools:ignore="ContentDescription"/>
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_acc" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp" app:layout_constraintHorizontal_bias="0.187"
+                android:id="@+id/linearLayout2" android:layout_marginStart="20dp">
             <TextView
-                    android:id="@+id/txtLayoutName"
+                    android:id="@+id/txtTV1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="@string/citizen_s_info"
-                    android:textSize="22sp"
-                    android:layout_marginTop="20dp"
-                    android:layout_centerHorizontal="true"
+                    android:text="@{viewModel.fullNameLiveData}"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"
             />
-        </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                    android:id="@+id/txtFullNameUser"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"
+            />
+        </LinearLayout>
 
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_acc" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="40dp" app:layout_constraintHorizontal_bias="0.187"
-            android:id="@+id/linearLayout2" android:layout_marginStart="20dp">
-        <TextView
-                android:id="@+id/txtTV1"
-                android:layout_width="wrap_content"
+        <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/full_name_info"
-                android:textSize="20sp"
                 tools:ignore="MissingConstraints"
-        />
-        <TextView
-                android:id="@+id/txtFullNameUser"
-                android:layout_marginStart="20dp"
-                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                android:layout_marginTop="35dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.18"
+                android:id="@+id/linearLayout4" android:layout_marginStart="20dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth_info"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"
+            />
+            <TextView
+                    android:id="@+id/txtDateOfBirthUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    tools:ignore="MissingConstraints"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="20sp"
                 tools:ignore="MissingConstraints"
-        />
-    </LinearLayout>
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="35dp"
+                app:layout_constraintHorizontal_bias="0.232" android:id="@+id/linearLayout6"
+                android:layout_marginStart="20dp">
+            <TextView
+                    android:id="@+id/txtTV3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_phone_info"
+                    android:textSize="20sp"
+            />
+            <TextView
+                    android:id="@+id/txtNumberPhoneUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"
+            />
+        </LinearLayout>
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            android:layout_marginTop="35dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.18"
-            android:id="@+id/linearLayout4" android:layout_marginStart="20dp">
-        <TextView
-                android:layout_width="wrap_content"
+        <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/date_of_birth_info"
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"
-        />
-        <TextView
-                android:id="@+id/txtDateOfBirthUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="20sp"
-                android:layout_marginStart="20dp"
-                tools:ignore="MissingConstraints"
-        />
-    </LinearLayout>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="35dp"
-            app:layout_constraintHorizontal_bias="0.232" android:id="@+id/linearLayout6"
-            android:layout_marginStart="20dp">
-        <TextView
-                android:id="@+id/txtTV3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/number_phone_info"
-                android:textSize="20sp"
-        />
-        <TextView
-                android:id="@+id/txtNumberPhoneUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_marginStart="20dp"
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"
-        />
-    </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.137" app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+                android:layout_marginTop="35dp" android:id="@+id/linearLayout8" android:layout_marginStart="20dp">
+            <TextView
+                    android:id="@+id/txtTV4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_info"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"/>
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.137" app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-            android:layout_marginTop="35dp" android:id="@+id/linearLayout8" android:layout_marginStart="20dp">
-        <TextView
-                android:id="@+id/txtTV4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/address_info"
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"/>
+            <TextView
+                    android:id="@+id/txtAddressUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginStart="20dp"
+            />
+        </LinearLayout>
 
-        <TextView
-                android:id="@+id/txtAddressUser"
-                android:layout_width="wrap_content"
+        <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"
-                android:layout_marginStart="20dp"
-        />
-    </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.128" app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+                android:layout_marginTop="35dp" android:id="@+id/linearLayout13" android:layout_marginStart="20dp">
+            <TextView
+                    android:id="@+id/txtTV5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ward_info"
+                    android:textSize="20sp"/>
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.128" app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-            android:layout_marginTop="35dp" android:id="@+id/linearLayout13" android:layout_marginStart="20dp">
-        <TextView
-                android:id="@+id/txtTV5"
-                android:layout_width="wrap_content"
+            <TextView
+                    android:id="@+id/txtWardUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ward_info"
-                android:textSize="20sp"/>
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13" android:layout_marginTop="35dp"
+                android:id="@+id/linearLayout15" android:layout_marginStart="20dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/district_info"
+                    android:textSize="20sp"/>
 
-        <TextView
-                android:id="@+id/txtWardUser"
-                android:layout_width="wrap_content"
+            <TextView
+                    android:id="@+id/txtDistrictUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:layout_marginStart="20dp"
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"/>
-    </LinearLayout>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.14"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout13" android:layout_marginTop="35dp"
-            android:id="@+id/linearLayout15" android:layout_marginStart="20dp">
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/district_info"
-                android:textSize="20sp"/>
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/province_info"
+                    android:textSize="20sp"/>
 
-        <TextView
-                android:id="@+id/txtDistrictUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_marginStart="20dp"
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"/>
-    </LinearLayout>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout15" android:layout_marginTop="35dp"
-            android:layout_marginStart="20dp">
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/province_info"
-                android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/txtProvinceUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    tools:ignore="MissingConstraints"/>
+        </LinearLayout>
 
-        <TextView
-                android:id="@+id/txtProvinceUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:layout_marginStart="20dp"
-                android:textSize="20sp"
-                tools:ignore="MissingConstraints"/>
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

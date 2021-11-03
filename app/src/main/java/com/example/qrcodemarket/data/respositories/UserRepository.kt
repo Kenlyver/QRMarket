@@ -9,7 +9,7 @@ class UserRepository(
     private val api:MyApi
 ):SafeApiRequest() {
 
-    suspend fun userLogin(loginName:String,password:String):AuthResponse{
+    suspend fun userLogin(loginName:String,password:String): AuthResponse? {
         return apiRequest { api.userLogin(loginName,password)}
     }
 

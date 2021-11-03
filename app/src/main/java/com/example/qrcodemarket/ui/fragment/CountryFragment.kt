@@ -247,9 +247,6 @@ class CountryFragment : Fragment() {
                             districtId.add(it.idDistrict)
                             districts.add(it.name)
                         }
-//                        provincesIdInDistrict.add(it.idProvince)
-//                        districtId.add(it.idDistrict)
-//                        districts.add(it.name)
                     }
 
                     val adapterDistrict = activity?.let {

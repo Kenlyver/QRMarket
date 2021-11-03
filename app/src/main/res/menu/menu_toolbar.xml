@@ -9,13 +9,14 @@
             <menu>
 
                 <item
-                    android:id="@+id/Date"
-                    android:title="Theo ngày"
+                    android:id="@+id/All"
+                    android:title="Tất cả"
                     app:showAsAction="always"/>
                 <item
-                      android:id="@+id/Market"
-                      android:title="Theo chợ"
-                      app:showAsAction="always"/>
+                      android:id="@+id/Search"
+                      android:title="Tìm kiếm"
+                      app:showAsAction="always|collapseActionView"
+                      app:actionViewClass="androidx.appcompat.widget.SearchView"/>
 
             </menu>
 

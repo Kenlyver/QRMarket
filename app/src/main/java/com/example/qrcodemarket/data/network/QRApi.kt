@@ -82,7 +82,7 @@ interface QRApi {
             val retrofit = Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://192.168.1.6:80/myapi/public/")
+                .baseUrl("http://192.168.1.2:80/myapi/public/")
                 .build()
 
             return retrofit.create(QRApi::class.java)

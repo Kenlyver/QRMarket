@@ -34,14 +34,14 @@ class AccountSettingFragment : Fragment() {
             return AccountSettingFragment()
         }
     }
-    var citizenId:String?= null
-    var fullName:String? = null
-    var dateOfBirth:String? = null
-    var address:String? = null
-    var numberPhone:String? = null
-    var loginName:String? = null
-    var disposable : Disposable? = null
-    private var mDatePickerDialog: DatePickerDialog? = null
+    lateinit var citizenId:String
+    lateinit var fullName:String
+    lateinit var dateOfBirth:String
+    lateinit var address:String
+    lateinit var numberPhone:String
+    lateinit var loginName:String
+    lateinit var disposable : Disposable
+    lateinit var mDatePickerDialog: DatePickerDialog
 
     val insertApi by lazy {
         QRApi.create()
@@ -54,7 +54,7 @@ class AccountSettingFragment : Fragment() {
         setDateTimeField()
         mView.edtDateOfBirth.setOnTouchListener(object : View.OnTouchListener {
             override fun onTouch(v: View?, event: MotionEvent?): Boolean {
-                mDatePickerDialog!!.show()
+                mDatePickerDialog.show()
                 return false
             }
         })
@@ -95,10 +95,8 @@ class AccountSettingFragment : Fragment() {
                     edtAddress.setText(address)
                     edtNumberPhone.setText(numberPhone)
                     Log.i("abc", "abc: " + result.data.toString())
-//                    Toast.makeText(context!!, "${result.message}", Toast.LENGTH_SHORT).show()
                 },
                 { error ->
-//                    Toast.makeText(context!!, "fail get", Toast.LENGTH_SHORT).show()
                     Log.i("abc", "abc: " + error.localizedMessage + error.message + error)
                     Toast.makeText(context!!, error.message, Toast.LENGTH_SHORT).show()
                 }
@@ -121,10 +119,8 @@ class AccountSettingFragment : Fragment() {
             .subscribe(
                 { result ->
                     Log.i("abc", "abc: " + result.message)
-//                    Toast.makeText(context!!, "${result.message}", Toast.LENGTH_SHORT).show()
                 },
                 { error ->
-//                    Toast.makeText(context!!, "fail get", Toast.LENGTH_SHORT).show()
                     Log.i("abc", "abc: " + error.localizedMessage + error.message + error)
                     Toast.makeText(context!!, error.message, Toast.LENGTH_SHORT).show()
                 }
@@ -133,20 +129,22 @@ class AccountSettingFragment : Fragment() {
 
     private fun setDateTimeField() {
         val newCalendar: Calendar = Calendar.getInstance()
-        mDatePickerDialog = context?.let {
-            DatePickerDialog(
-                it, R.style.DialogTheme,
-                { view, year, monthOfYear, dayOfMonth ->
-                    val newDate: Calendar = Calendar.getInstance()
-                    newDate.set(year, monthOfYear, dayOfMonth)
-                    val sd = SimpleDateFormat("dd-MM-yyyy")
-                    val startDate: Date = newDate.getTime()
-                    val fdate: String = sd.format(startDate)
-                    edtDateOfBirth.setText(fdate)
-                }, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH)
-            )
+        mDatePickerDialog = context.let {
+            it?.let { it1 ->
+                DatePickerDialog(
+                    it1, R.style.DialogTheme,
+                    { view, year, monthOfYear, dayOfMonth ->
+                        val newDate: Calendar = Calendar.getInstance()
+                        newDate.set(year, monthOfYear, dayOfMonth)
+                        val sd = SimpleDateFormat("dd-MM-yyyy")
+                        val startDate: Date = newDate.getTime()
+                        val fdate: String = sd.format(startDate)
+                        edtDateOfBirth.setText(fdate)
+                    }, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH)
+                )
+            }!!
         }
-        mDatePickerDialog!!.getDatePicker().setMaxDate(System.currentTimeMillis())
+        mDatePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis())
     }
 
 }

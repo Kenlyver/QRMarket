@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/HistoryFragment"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ui.fragment.HistoryFragment">
-    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleHistory"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:padding="4dp"
-            android:clipToPadding="false"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="60dp"/>
+    <data>
+        <variable name="viewModel"
+                  type="com.example.qrcodemarket.ui.user.History.HistoryViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/HistoryFragment"
+            tools:context=".ui.user.History.HistoryFragment">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleHistory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="4dp"
+                android:clipToPadding="false"
+                app:setAdapter='@{viewModel.getAdapter()}'
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
